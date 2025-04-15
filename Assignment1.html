@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techspark</title>
+    <!--  -->
+    <style>
+        li{
+            list-style-type: none;
+            display: inline;
+            margin: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #interest{
+            padding: 10px;
+        }
+        input{
+            margin: 6px;
+            width: 500px;
+            padding: 10px;
+        }
+        label{
+            margin: 5px;
+        }
+        #online{
+            width: 0px;
+        }
+        #inperson{
+            width: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+     <header style="background-color: gray;">
+        <h1 style="padding-left: 15px; padding-top: 20px;">Techspark Conference 2025</h1>
+        <nav>
+            <ul style="padding-left: 15px; padding-bottom: 20px;">
+                <li><a href="">Home</a></li>
+                <li><a href="">Schedule</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        
+     </header>
+     <!-- Conference Schedule Section -->
+      <section id="conference schedule">
+        <h2>Conference Schedule</h2>
+        <table border="1" cellspacing="0px" width="100%" cellpadding="5px" style="text-align: left;">
+            <thead style="background-color:yellow">
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                    <th>Track</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">09:00 AM</td>
+                    <td>Future of Web Development</td>
+                    <td>Dr. Lina Parker</td>
+                    <td>Development</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>Designing for AR/VR</td>
+                    <td>Ali Khan</td>
+                    <td>Design</td>
+                    <td>Room A</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>
+                    <td>UX Design in AI Era</td>
+                    <td>Samir Das</td>
+                    <td>Design</td>
+                    <td>Room B</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td colspan="4"><b>Lunch Break</b>(Buffet in Main Lobby)</td>
+                    
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                    <td>Building Scalable Startups</td>
+                    <td>Rachel Wong</td>
+                    <td>Business</td>
+                    <td>Room C</td>
+                </tr>
+                <tr>
+                    <td>01:30 PM</td>
+                    <td>Keynote: Tech for Good</td>
+                    <td>Dr. Lina Parker</td>
+                    <td>Keynote</td>
+                    <td>Main Hall</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+    <!-- Register Section -->
+    <Section id="register for the conference">
+        <h2>Register for the Conference</h2>
+        <fieldset style="width: 500px;height: 250px;">
+            <form action="" method="get">
+                <!-- Full Name -->
+                <label for="name">Full Name:</label>
+                <br/>
+                <input type="text" id="name">
+                <br/>
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <br/>
+                <input type="email" id="email">
+                <br/>
+                <!-- Track of Interest -->
+                <label for="interest">Track of Interest:</label>
+                <br/>
+                <select style="margin: 5px; width: 500px;" name="interest" id="interest">
+                    <option value="">Development</option>
+                    <option value="">Design</option>
+                    <option value="">Business</option>
+                </select>
+                <br/>
+                <!-- Attendence Type -->
+                <label>Attendence Type:</label>
+                <br/>
+                <input type="radio" id="online" name="attendence">
+                <label for="online">Online</label>
+                    
+                <input type="radio" id="inperson" name="attendence">
+                <label for="inperson">In Person</label>
+                <br/>
+                <!-- Submit Registration -->
+                <button style="background-color: black; color: white; margin: 5px;">Submit Registration</button>
+            </form>
+        </fieldset>
+    </Section>
+    <br/>
+    <!-- Footer -->
+    <footer style="background-color: gray; text-align: center; padding: 5px;">
+        <p>©2025 Techspark Conference. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
